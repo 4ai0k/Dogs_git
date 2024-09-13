@@ -16,3 +16,6 @@ class Dog:
 
     def set_age(self, age):
         self.__age = age
+
+    def dark(self):
+        return f'Собака {self.get_name}, возраста {self.get_age()}, цвета {self.get_color()} гавкает громко'
