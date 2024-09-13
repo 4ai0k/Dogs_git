@@ -19,3 +19,16 @@ class Dog:
 
     def dark(self):
         return f'Собака {self.get_name}, возраста {self.get_age()}, цвета {self.get_color()} гавкает громко'
+
+
+class Thoroughbred(Dog):
+
+    def __init__(self, name, age, color, breed):
+        super().__init__(name, age, color)
+        self.__breed = breed
+
+    def get_breed(self):
+        return self.__breed
+
+    def go_to_dog_show(self):
+        return f'Собака {super().get_name()}, породы {self.get_breed} участвует в выставке.'
