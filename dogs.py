@@ -13,3 +13,6 @@ class Dog:
 
     def get_color(self):
         return self.__color
+
+    def set_age(self, age):
+        self.__age = age
