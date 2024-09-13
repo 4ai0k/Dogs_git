@@ -30,3 +30,5 @@ class Thoroughbred(Dog):
     def get_breed(self):
         return self.__breed
 
+    def go_to_dog_show(self):
+        return f'Собака {super().get_name()}, породы {self.get_breed} участвует в выставке.'
