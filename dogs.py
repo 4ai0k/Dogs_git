@@ -18,7 +18,7 @@ class Dog:
         self.__age = age
 
     def dark(self):
-        return f'Собака {self.get_name}, возраста {self.get_age()}, цвета {self.get_color()} гавкает громко'
+        return f'Собака {self.get_name()}, возраста {self.get_age()}, цвета {self.get_color()} гавкает громко'
 
 
 class Thoroughbred(Dog):
@@ -31,4 +31,4 @@ class Thoroughbred(Dog):
         return self.__breed
 
     def go_to_dog_show(self):
-        return f'Собака {super().get_name()}, породы {self.get_breed} участвует в выставке.'
+        return f'Собака {super().get_name()}, породы {self.get_breed()} участвует в выставке.'
